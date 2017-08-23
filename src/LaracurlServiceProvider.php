@@ -1,4 +1,4 @@
-<?php namespace Zjango\Laracurl;
+<?php namespace Dlouvard\Laracurl;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,4 +1,4 @@
-<?php namespace Zjango\Laracurl\Facades;
+<?php namespace Dlouvard\Laracurl\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

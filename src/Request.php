@@ -1,4 +1,4 @@
-<?php namespace Zjango\Laracurl;
+<?php namespace Dlouvard\Laracurl;
 
 class Request {
 

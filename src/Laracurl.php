@@ -1,4 +1,4 @@
-<?php namespace Zjango\Laracurl;
+<?php namespace Dlouvard\Laracurl;
 
 class Laracurl {
 
@@ -27,14 +27,14 @@ class Laracurl {
 	 *
 	 * @var string
 	 */
-	protected $requestClass = 'Zjango\Laracurl\Request';
+	protected $requestClass = 'Request';
 
 	/**
 	 * The response class to use.
 	 *
 	 * @var string
 	 */
-	protected $responseClass = 'Zjango\Laracurl\Response';
+	protected $responseClass = 'Response';
 
 	/**
 	 * Get allowed methods.

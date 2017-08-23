@@ -10,7 +10,7 @@ To install the package, simply add the following to your Laravel installation's 
 ```json
 "require": {
 	"laravel/framework": "5.*",
-	"zjango/laracurl": "dev-master"  
+	"dlouvard/laracurl": "dev-master"  
 },
 ```
 
@@ -19,14 +19,14 @@ Run the usual `composer update` to pull the files.  Then, add the following **Se
 ```php
 'providers' => array(
 	...
-	'Zjango\Laracurl\LaracurlServiceProvider',
+	'Dlouvard\Laracurl\LaracurlServiceProvider',
 );
 ```
 
 And finally add a new line to the aliases array:
 
 ```php
-		'Laracurl'	=>	'Zjango\Laracurl\Facades\Laracurl',
+		'Laracurl'	=>	'Dlouvard\Laracurl\Facades\Laracurl',
 ```
 
 # Usage
