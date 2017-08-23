@@ -97,9 +97,7 @@ class Laracurl {
 	 */
 	public function newRequest($method, $url, $data = array(), $encoding = Request::ENCODING_QUERY)
 	{
-		$class = $this->requestClass;
-		$request = new $class($this);
-
+		$request = new Request($this);
 		$request->setMethod($method);
 		$request->setUrl($url);
 		$request->setData($data);
@@ -189,7 +187,6 @@ class Laracurl {
 		}
 
 		$response = $this->createResponseObject($result);
-
 		curl_close($this->ch);
 
 		return $response;
@@ -212,9 +209,8 @@ class Laracurl {
 		$headers = $this->headerToArray($headerText);
 
 		$body = substr($response, $headerSize);
+		$obj = new Response($body, $headers, $info);
 
-		$class = $this->responseClass;
-		$obj = new $class($body, $headers, $info);
 		return $obj;
 	}
 
