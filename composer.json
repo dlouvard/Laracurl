@@ -4,13 +4,12 @@
     "keywords": ["framework", "laravel", "curl", "Laracurl"],
     "license": "MIT",
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": ">=5.4"
+        "php": ">7.2",
+        "illuminate/support": "6.*"
     },
     "autoload": {
         "psr-4": {
             "Dlouvard\\Laracurl\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
